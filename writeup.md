@@ -19,14 +19,27 @@ The goals / steps of this project are the following:
 * Exploratory Analysis
   * Samples images from train dataset are printed to get an idea of the dataset
   * Plotted a histogram with classes on X-axis and Count on Y-axis
+[//]: # (Image References)
+
+[image1]: ./writeup_images/Hist.jpg
+[image2]: ./writeup_images/Actual_Img.png
+[image3]: ./writeup_images/Grey_Scale.png
+[image4]: ./writeup_images/11.jpg
+[image5]: ./writeup_images/13.jpg
+[image6]: ./writeup_images/15.jpg
+[image7]: ./writeup_images/21.jpg
+[image8]: ./writeup_images/38.jpg
+
+![alt text][image1]
+
 
 ###Training pipeline setup
 This section briefs the steps in the pipeline for training Sign classifier
 * <b>Preprocessing</b>
   * As a first step, images are converted to grey scale - this step is needed for following reasons:
     * Grey scale images are faster to train - 3X less space and compute compared to RGB images
-    * The dataset is color agnostic - in a way, change is color doesn't change the class of the image
-    A sample Grey scale converted image is shown below
+    * The dataset is color agnostic - in a way, change is color doesn't change the class of the image<br>
+![alt text][image2] ![alt text][image3]
   * Image data is normalized and the pixel intensities are brought down to the scale of [0,0.9] from [0,255]
     * Normalization is needed for stabilizing the training process
     * Normalization helps in faster convergence of the deep learning model
@@ -70,6 +83,8 @@ This section briefs the steps in the pipeline for training Sign classifier
 ###Test a Model on New Images
 * <b>Acquiring New Images</b>
   * Following images were downloaded from web and the trained model was run on them to check the performance of the trained net
+![alt text][image4] ![alt text][image5] ![alt text][image6]
+![alt text][image7] ![alt text][image8]
 * <b>Performance on New Images</b>
   * Of the five images selected, four were classified correctly ie ~80% accuracy
   * "Double curve" sign was classified as "Beware of ice/snow" and the confiden scores are close
