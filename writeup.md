@@ -82,9 +82,12 @@ This section briefs the steps in the pipeline for training Sign classifier
     
 ###Test a Model on New Images
 * <b>Acquiring New Images</b>
-  * Following images were downloaded from web and the trained model was run on them to check the performance of the trained net
-![alt text][image4] ![alt text][image5] ![alt text][image6]
-![alt text][image7] ![alt text][image8]
+  * Following images were downloaded from web and the trained model was run on them to check the performance of the trained net <br>
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
+![alt text][image8]
 * <b>Performance on New Images</b>
   * Of the five images selected, four were classified correctly ie ~80% accuracy
   * "Double curve" sign was classified as "Beware of ice/snow" and the confiden scores are close
