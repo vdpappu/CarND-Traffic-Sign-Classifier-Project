@@ -92,8 +92,12 @@ This section briefs the steps in the pipeline for training Sign classifier
   * Of the five images selected, four were classified correctly ie ~80% accuracy
   * "Double curve" sign was classified as "Beware of ice/snow" and the confiden scores are close
     * <b>Beware of ice/snow</b> - 58.7%
-    * <b>Double curve/snow</b> - 33.4%
+    * <b>Double curve</b> - 33.4%
    * This needs further analysis to find the reason - possible reason could be insufficient training data, overfitting.
+   * Are there any particular qualities of the image(s) that might make classification difficult?
+    * Yes, the images downloaded looks artificial compared to the actual images in the training dataset, this might have an impact on the accuracy. Adding more data and learning additional features could address this issue. Apart from that, upon further experimentation, I have found that the images with more than one traffic sign are not being classified as either of the signs, this could be because of different features activating for each of the sign (in the image) and there by making the final predicting not belonging to any of the class. 
+   
+
 * <b>Model Certainty - Softmax Probabilities</b>
   * In cases where the model classification was accurate, the soft max probabilities of predicted classes are close to 99%,
   this could be because the downloaded images are close to the images in the dataset provided
