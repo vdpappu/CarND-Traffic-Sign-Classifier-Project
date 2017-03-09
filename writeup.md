@@ -95,7 +95,7 @@ This section briefs the steps in the pipeline for training Sign classifier
     * <b>Double curve</b> - 33.4%
    * This needs further analysis to find the reason - possible reason could be insufficient training data, overfitting.
    * Are there any particular qualities of the image(s) that might make classification difficult?
-    * Yes, the images downloaded looks artificial compared to the actual images in the training dataset, this might have an impact on the accuracy. Adding more data and learning additional features could address this issue. Apart from that, upon further experimentation, I have found that the images with more than one traffic sign are not being classified as either of the signs, this could be because of different features activating for each of the sign (in the image) and there by making the final predicting not belonging to any of the class. 
+     * Yes, the images downloaded looks artificial compared to the actual images in the training dataset, this might have an impact on the accuracy. Adding more data and learning additional features could address this issue. Apart from that, upon further experimentation, I have found that the images with more than one traffic sign are not being classified as either of the signs, this could be because of different features activating for each of the sign (in the image) and there by making the final predicting not belonging to any of the class. 
    
 
 * <b>Model Certainty - Softmax Probabilities</b>
